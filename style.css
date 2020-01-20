@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  height: 100%;
+  margin: auto;
+  background-color: black;
+}
+
+td {
+  background-color: lightgray;
+}
+
+.out {
+  background-color: gray;
+}
+
+input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}

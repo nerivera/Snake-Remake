@@ -1,2 +1,7 @@
 # Snake-Remake
-My web remake of the classic game Snake, which I made in 2015. Use WASD or arrow keys. Press space to pause.
+
+VIEW AT: https://nerivera.github.io/Snake-Remake/
+
+My web remake of the classic game Snake. Use WASD or arrow keys. Press space to pause.
+
+Made by Nilo E Rivera (@nerivera) April 2015

@@ -11,6 +11,7 @@ var snPos = [Math.floor(Math.random() * 195) + 1],
 while (![1, 2, 3].includes(time)) {
   time = Number(prompt("Choose a difficulty:\n  Easy - 1\n  Medium - 2\n  Hard - 3\n (Enter 1, 2, or 3:)"));
 }
+alert("Use WASD or the arrow keys to move. Press space to pause.");
 time = [250, 175, 100][time - 1];
 
 function move() {
@@ -101,7 +102,7 @@ function change(event) {
     case 32:
       dirSum = 0;
   }
-  if (save === -1 * dirSum) {
+  if (save === -1 * dirSum && snPos.length != 1) {
     dirSum = save;
   }
 }

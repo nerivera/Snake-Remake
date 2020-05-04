@@ -45,7 +45,10 @@ function move() {
         count++;
       }
     }
-    if (count < snPos.length || (sav === 14 && snPos[0] === 15) || (sav === 28 && snPos[0] === 29) || (sav === 42 && snPos[0] === 43) || (sav === 56 && snPos[0] === 57) || (sav === 70 && snPos[0] === 71) || (sav === 98 && snPos[0] === 99) || (sav === 112 && snPos[0] === 113) || (sav === 126 && snPos[0] === 127) || (sav === 140 && snPos[0] === 141) || (sav === 154 && snPos[0] === 155) || (sav === 168 && snPos[0] === 169) || (sav === 182 && snPos[0] === 183) || (sav === 196 && snPos[0] === 197) || (sav === 15 && snPos[0] === 14) || (sav === 29 && snPos[0] === 28) || (sav === 43 && snPos[0] === 42) || (sav === 57 && snPos[0] === 56) || (sav === 71 && snPos[0] === 70) || (sav === 85 && snPos[0] === 84) || (sav === 99 && snPos[0] === 98) || (sav === 113 && snPos[0] === 112) || (sav === 127 && snPos[0] === 126) || (sav === 141 && snPos[0] === 140) || (sav === 155 && snPos[0] === 154) || (sav === 169 && snPos[0] === 168) || (sav === 183 && snPos[0] === 182) || (sav === 197 && snPos[0] === 196)) {
+    if (count < snPos.length ||
+         (sav % 14 === 0 && sav > 13 && sav < 197 && snPos[0] === sav + 1) ||
+         (snPos[0] % 14 === 0 && snPos[0] > 13 && snPos[0] < 197 && sav == snPos[0] + 1)
+       ) {
       go = false;
       $("td").css("background-color", "lightgray");
       $(".out").css("background-color", "gray");

@@ -10,12 +10,10 @@ table {
   height: 100%;
   margin: auto;
   background-color: black;
-  border-color: rgba(0, 0, 0, 0);
 }
 
 td {
   background-color: lightgray;
-  border-color: rgba(0, 0, 0, 0);
 }
 
 .out {
